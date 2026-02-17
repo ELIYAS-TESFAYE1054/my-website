@@ -1,0 +1,160 @@
+body{
+    background: aliceblue;
+}
+.box{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    border-radius: 4%;
+    background-color: green;
+    margin-left: 0%;
+    margin-top: 4%;
+
+}
+.bo{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    border-radius: 4%;
+    background-color: green;
+    margin-left: 20%;
+    margin-top: 4%;
+
+}
+.boxs{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+border-radius: 4%;
+    background-color: green;
+    margin-left: 40%;
+    margin-top: 4%;
+
+}
+.boxy{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    border-radius: 4%;
+    background-color: green;
+    margin-left: 60%;
+    margin-top: 4%;
+
+}
+.bos{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    border-radius: 4%;
+    background-color: green;
+    margin-left: 80%;
+    margin-top: 4%;
+
+}
+.bx{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    border-radius: 4%;
+    background-color: green;
+    margin-left: 100%;
+    margin-top: 4%;
+
+}
+
+.one{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    border-radius: 4%;
+    background-color: green;
+    margin-left: 0%;
+    margin-top: 14%;
+
+}
+.two{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    border-radius: 4%;
+    background-color: green;
+    margin-left: 20%;
+    margin-top: 14%;
+
+}
+.three{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    border-radius: 4%;
+    background-color: green;
+    margin-left: 40%;
+    margin-top:  14%;
+
+}
+.four{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    border-radius: 4%;
+    background-color: green;
+    margin-left: 60%;
+    margin-top: 14%;
+
+}
+.five{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    border-radius: 4%;
+    background-color: green;
+    margin-left: 80%;
+    margin-top: 14%;
+
+}
+.six{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    border-radius: 4%;
+    background-color: green;
+    margin-left: 20%;
+    margin-top: 14%;
+
+}
+.say{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    border-radius: 4%;
+    background-color: green;
+    margin-left: 0;
+    margin-top: 24%;
+
+}
+.says{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    border-radius: 4%;
+    background-color: green;
+    margin-left: 20%;
+    margin-top: 24%;
+
+}
+.num{
+    color: white;
+}
+.back{
+    width: 5%;
+    height: 4px;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    font-weight: bolder;
+    border: none;
+    text-decoration: none;
+}
+.back:hover{
+    background: linear-gradient(green, white, green);
+}

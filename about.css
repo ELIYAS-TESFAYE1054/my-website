@@ -1,0 +1,82 @@
+body{
+background: aliceblue;
+}
+.container{
+   position: absolute;
+    width: 1000px;
+    height: 600px;
+    margin-left: 17%;
+    margin-top: 3%;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 40px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+
+    
+}
+.contain{
+   position: absolute;
+   top: 40px;
+    width: 300px;
+    height: 400px;
+    margin-left: -90%;
+    margin-top: 3%;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 40px black;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+  
+    background-color: white;
+    
+}
+.defn{
+    color: green;
+    font-size: large;
+    font-weight: lighter;
+    margin-left: -320px;
+    text-justify: inter-word;
+}
+.btn{
+    background-color: green;
+    color: white;
+    width: 70px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bolder;
+
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+}
+.btn:hover{
+    cursor: pointer;
+    background: linear-gradient(green, white, green);
+    width: 90px;
+   
+}
+.about{
+    position: relative;
+    color: green;
+    font-weight: lighter, bolder;
+    margin-bottom: 50%;
+    padding-left: 50%;
+   
+}
+.pic{
+    align-items: center;
+  
+    height: 100%;
+    width: 120%;
+    border-radius: 5%;
+}

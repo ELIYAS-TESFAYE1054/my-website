@@ -1,0 +1,39 @@
+.navbar {
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
+
+.navbar >div{
+display: flex;
+align-items: center;
+gap: 16px;
+}
+.navbar  img{
+    height: 60px;
+    object-fit: cover;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+} 
+
+.navigation {
+    display: flex;
+    color: white;
+    gap: 16px;
+    padding-right: 10px;
+}
+.navigation >a {
+    color: rgb(206, 203, 203);
+    text-decoration: none;
+    font-size: large;
+
+}
+
+.navigation >a:hover {
+    color: white;
+
+}

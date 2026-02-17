@@ -1,0 +1,89 @@
+body{
+    background: aliceblue;
+}
+.contain{
+   position: absolute;
+   margin-top: 43px;
+    width: 400px;
+    height: 400px;
+    margin-left: 3%;
+    top: 28%;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 40px black;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+  
+    background-color: white;
+    
+}
+.pre{
+    color: green;
+    text-align: center;
+}
+.upload{
+    color: white;
+    font-size: larger;
+    background-color: green;
+    width: 15%;
+    height: 5%;
+    border-radius: 7px;
+    margin-left: 3%;
+    margin-top: 5%;
+  
+}
+.doc{
+   color: white;
+    font-size: larger;
+    background-color: green;
+    width: 15%;
+    height: 5%;
+    border-radius: 7px;
+    margin-left: 60%;
+       margin-top: -15%;
+}
+.only{
+      position: absolute;
+   top: 40px;
+    width: 400px;
+    height: 400px;
+    margin-left: 60%;
+    top: 35%;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border: none;
+    background-color: white;
+    color: green;
+    
+}
+.back{
+    width: 5%;
+    height: 4px;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    font-weight: bolder;
+    border: none;
+    text-decoration: none;
+}
+.back:hover{
+    background: linear-gradient(green, white, green);
+}
+.sub{
+    width: 10%;
+    height: 7%;
+    color: white;
+    background-color: green;
+    margin-top: 40%;
+    margin-left: 3%;
+    border-radius: 3%;
+}

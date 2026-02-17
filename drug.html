@@ -1,0 +1,167 @@
+<!-- <?php
+$Analgesics = "";
+$Antihistamines = "";
+$Antibiotics = "";
+$Antifungals = "";
+$Antivirals = "";
+$Gastrointestinal = "";
+$Antidepressants = "";
+$Antipyretics = "";
+$Antiemetics = "";
+$Hormonal = "";
+$Antiseptics = "";
+$err = "";
+
+// Database connection
+$host = 'localhost';
+$username = 'root';
+$password = 'tecno@ela';
+$dbname = 'pharmacy';
+// Create connection
+$conn = new mysqli($host, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Check if the 'Add' button is clicked
+if (isset($_POST['Add'])) {
+    // Retrieve and sanitize input
+    $Analgesics = mysqli_real_escape_string($conn, $_POST['Analgesics']);
+    $Antihistamines = mysqli_real_escape_string($conn, $_POST['Antihistamines']);
+    $Antibiotics = mysqli_real_escape_string($conn, $_POST['Antibiotics']);
+    $Antifungals = mysqli_real_escape_string($conn, $_POST['Antifungals']);
+    $Antivirals = mysqli_real_escape_string($conn, $_POST['Antivirals']);
+    $Gastrointestinal = mysqli_real_escape_string($conn, $_POST['Gastrointestinal']);
+    $Antidepressants = mysqli_real_escape_string($conn, $_POST['Antidepressants']);
+    $Antipyretics = mysqli_real_escape_string($conn, $_POST['Antipyretics']);
+    $Antiemetics = mysqli_real_escape_string($conn, $_POST['Antiemetics']);
+    $Hormonal = mysqli_real_escape_string($conn, $_POST['Hormonal']);
+    $Antiseptics = mysqli_real_escape_string($conn, $_POST['Antiseptics']);
+
+    // Insert into the drug table
+    $insert = "INSERT INTO medicines (Analgesics, Antihistamines, Antibiotics, Antifungals, Antivirals, Gastrointestinal, 
+                Antidepressants, Antipyretics, Antiemetics, Hormonal, Antiseptics) 
+                VALUES ('$Analgesics', '$Antihistamines', '$Antibiotics', '$Antifungals', '$Antivirals', '$Gastrointestinal', 
+                        '$Antidepressants', '$Antipyretics', '$Antiemetics', '$Hormonal', '$Antiseptics')";
+
+    // Execute the query and check if the insertion was successful
+    if (mysqli_query($conn, $insert)) {
+        echo '<div style="height:100px; width:400px;color:green; background:white;border:2px solid; 
+                    margin:auto; display:flex; justify-content:center; align-items:center;">
+                <h2>Inserted successfully!</h2>
+              </div>';
+        exit();
+    } else {
+        $err = "Registration failed: " . mysqli_error($conn);
+    }
+}
+// Delete
+if (isset($_POST['Delete'])) {
+    $id = mysqli_real_escape_string($conn, $_POST['id']);
+    $delete = "DELETE FROM medicines WHERE id = '$id'";
+    if (mysqli_query($conn, $delete)) {
+        $success = "Deleted successfully!";
+    } else {
+        $err = "Delete failed: " . mysqli_error($conn);
+    }
+}
+
+
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="drug.css">
+    <title>Add and Remove medicine</title>
+</head>
+<header class="head">Add and Remove medicine</header>
+<body>
+    <div>
+          <input class="srch" type="btn" name="search" placeholder="tpye to text" style="margin-left: 36%; border-radius: 5%; border: none;">
+                 <button class="btn" name="Search" for="searchID">search</button>
+    </div>
+    
+    <div class="wrapper">
+           <!--<span class="icon-closed" id="close" onclick="closeWindow()"> <ion-icon name="close-outline"></ion-icon></span>--> 
+            <div class="form-box Registration">
+    <h2 style="color: green;" class="page">Add And Remove</h2>
+    
+    <div class="err">
+        <!--<?php echo $err;?>-->
+    </div>
+    
+    <form action="drug.html" method="POST">
+        <div class="Inbox-box">
+            <span class="icon"> <i class="fa-solid fa-phone"></i></span>
+            <label class="space">Analgesics</label>
+            <input type="text" class="form-control" id="Analgesics" name="Analgesics" required>
+        </div>
+       <div class="Inbox-box">
+            <span class="icon"> <i class="fa-solid fa-phone"></i></span>
+            <label class="space">Antihistamines</label>
+            <input type="text" class="form-control" id="Antihistamines" name="Antihistamines" required>
+        </div>
+        <div class="Inbox-box">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <label class="space">Antibiotics</label>
+            <input type="text" class="form-control" id="Antibiotics" name="Antibiotics" required>
+        </div>
+        <div class="Inbox-box">
+            <span class="icon"> <i class="fa-solid fa-phone"></i></span>
+            <label class="space">Antifungals</label>
+            <input type="text" class="form-control" id="Antifungals" name="Antifungals" required>
+        </div>
+        <div class="Inbox-box">
+            <span class="icon"> <i class="fa-solid fa-phone"></i></span>
+            <label class="space">Antivirals</label>
+            <input type="text" class="form-control" id="Antivirals" name="Antivirals" required>
+        </div>
+        <div class="Inbox-box">
+            <span class="icon"> <i class="fa-solid fa-phone"></i></span>
+            <label class="space">Gastrointestinal</label>
+            <input type="text" class="form-control" id="Gastrointestinal" name="Gastrointestinal" required>
+        </div>
+        <div class="Inbox-box">
+            <span class="icon"> <i class="fa-solid fa-phone"></i></span>
+            <label class="space">Antidepressants</label>
+            <input type="text" class="form-control" id="Antidepressants" name="Antidepressants" required>
+        </div>
+        <div class="Inbox-box">
+            <span class="icon"> <i class="fa-solid fa-phone"></i></span>
+            <label class="space">Antipyretics</label>
+            <input type="text" class="form-control" id="Antipyretics" name="Antipyretics" required>
+        </div>
+        <div class="Inbox-box">
+            <span class="icon"> <i class="fa-solid fa-phone"></i></span>
+            <label class="space">Antiemetics</label>
+            <input type="text" class="form-control" id="Antiemetics" name="Antiemetics" required>
+        </div>
+        <div class="Inbox-box">
+            <span class="icon"> <i class="fa-solid fa-phone"></i></span>
+            <label class="space">Hormonal</label>
+            <input type="text" class="form-control" id="Hormonal" name="Hormonal" required>
+        </div>
+        <div class="Inbox-box">
+            <span class="icon"> <i class="fa-solid fa-phone"></i></span>
+            <label class="space">Antiseptics</label>
+            <input type="text" class="form-control" id="Antiseptics" name="Antiseptics" required>
+        </div>
+        
+        <button type="submit" class="btn"  onclick="Add()" name="Add">Add</button>
+        <button type="reset" class="btn"  name="Delete">Delete</button>
+        <button type="submit" class="btn" name="Update">Update</button>
+       
+       
+        
+    </form>
+    <br>
+<div>
+            <a href="home.html" class="btn">back to home</a>
+        </div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+body{
+    
+    background-color: aliceblue;
+}
+.header{
+    color: green;
+    background-color: aliceblue;
+    margin-bottom: 3%;
+    height: 5%;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 37%;
+    text-decoration: underline;
+}
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: green;
+    text-decoration: none;
+    font-weight: 50;
+    margin-left: 50px;
+    align-items: center;
+    margin-top: 150px;   
+    margin-bottom: 4%; 
+}
+/*navigation underline property at cursor at that point*/
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: green;
+    border-radius: 5px;
+    
+    transform-origin: center;
+    transition: transform .5s;
+    margin-bottom: 2%;
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+.drug{
+color: green;
+margin-left: 4%;
+margin-bottom: 2%;
+}
+.btn{
+    width: 10%;
+    height: 35px;
+    background: green;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    align-items: center;
+    margin-left: 2%;
+
+     transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    
+}
+    .btn:hover{
+       /* width: 30px;
+        transform: translatey(1.5);
+    transition: 5s;
+    cursor: pointer;*/
+    width: 120px;
+    background: linear-gradient(green,white,green);
+    color:black;
+
+    }
