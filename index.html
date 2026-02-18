@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eliyas Tesfaye | Portfolio</title>
+    <title>Eliyas Tesfaye | Professional Profile</title>
     <style>
         * {
             margin: 0;
@@ -11,59 +11,103 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: #fff;
-            height: 100vh;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #f4f7f6;
+            color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
+            min-height: 100vh;
+            padding: 20px;
         }
-        .card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 3rem;
+        .profile-card {
+            background: white;
             border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-            max-width: 500px;
-            width: 90%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+            padding: 40px 20px;
+            transition: transform 0.3s ease;
+        }
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+        /* picture insert area */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #ddd; /* ፎቶ ከሌለ ግራጫ ይሆናል */
+            margin: 0 auto 20px;
+            border: 4px solid #5a67d8;
+            object-fit: cover;
         }
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #fff;
+            font-size: 1.8rem;
+            color: #2d3748;
+            margin-bottom: 5px;
         }
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            color: #e0e0e0;
+        .title {
+            color: #5a67d8;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+        .about {
+            font-size: 1rem;
+            color: #718096;
             line-height: 1.6;
+            margin-bottom: 25px;
+            padding: 0 15px;
         }
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background: #fff;
-            color: #1e3c72;
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        .social-btn {
             text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
             font-weight: bold;
-            border-radius: 30px;
-            transition: all 0.3s ease;
+            transition: opacity 0.3s;
         }
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            background: #f0f0f0;
+        .github { background: #2d333b; }
+        .telegram { background: #0088cc; } /* ቴሌግራም ካለህ */
+        
+        .contact-me {
+            display: block;
+            margin-top: 10px;
+            color: #5a67d8;
+            text-decoration: none;
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h1>Hi, I'm Eliyas Tesfaye! 👋</h1>
-        <p>Welcome to my personal corner of the web. I'm excited to share my journey and projects with you here on GitHub Pages.</p>
-        <a href="https://github.com/eliyas-tesfaye1054" target="_blank" class="btn">View My GitHub</a>
+    <div class="profile-card">
+        <img src="https://via.placeholder.com/150" alt="Eliyas Tesfaye" class="profile-img">
+        
+        <h1>Eliyas Tesfaye</h1>
+        <p class="title">Tech Enthusiast & Learner</p>
+        
+        <p class="about">
+            Hello! I'm a passionate learner from Ethiopia. I'm interested in technology, web development, and creating cool projects on GitHub. This is my official personal landing page.
+        </p>
+
+        <div class="social-links">
+            <a href="https://github.com/eliyas-tesfaye1054" class="social-btn github" target="_blank">GitHub</a>
+            <a href="https://t.me/your_username" class="social-btn telegram" target="_blank">Telegram</a>
+        </div>
+
+        <a href="mailto:your-email@example.com" class="contact-me">Get In Touch</a>
     </div>
 
 </body>
